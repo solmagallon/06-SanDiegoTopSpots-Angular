@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <title> San Diego Top Spots </title>
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+     
+      <script src="http://code.jquery.com/jquery.js"></script>
+      
+      <link href="css/style.css" rel="stylesheet" type="text/css" />
+      
+      <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'/>
+
+      <script src="index2.js"></script>
+
+      <link rel="stylesheet" href="https://cdn.rawgit.com/esvit/ng-table/v1.0.0/dist/ng-table.min.css">
+
+
+
+  </head>
+
+
+<body>
+<div ng-app="myApp">
+<div ng-controller="LocationsCtrl">
+    <p>    Click <a ng-click="loadLocations()">here</a> to load data.</p>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Location</th>
+    </tr>
+    <tr ng-repeat="topspot in topspots">
+        <td>{{topspot.id}}</td>
+        <td>{{topspot.name}}</td>
+        <td>{{topspot.description}}</td>
+        <td>{{topspot.location}}
+    </tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+  </body>
+</html>

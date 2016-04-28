@@ -1,0 +1,24 @@
+{
+  "name": "bower",
+  "main": "y",
+  "description": "test",
+  "keywords": [
+    "w"
+  ],
+  "authors": [
+    "me"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
